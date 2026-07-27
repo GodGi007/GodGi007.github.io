@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mods — นักแปลนอนน้อย</title>
+  <meta name="description" content="รายการ Mod ภาษาไทยทั้งหมดโดย นักแปลนอนน้อย">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">[</span>นักแปลนอนน้อย<span class="logo-bracket">]</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="เมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" id="nav-home">หน้าแรก</a></li>
+        <li><a href="mods.html" class="active" id="nav-mods">Mods</a></li>
+        <li><a href="about.html" id="nav-about">เกี่ยวกับ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-header-title"><span class="neon">//</span> Mods ทั้งหมด</h1>
+      <p class="page-header-sub">รวม Mod ภาษาไทยทั้งหมดที่ทำไว้ อัปเดตเรื่อยๆ</p>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <section class="section" id="mods-section">
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="กรองประเภท Mod">
+        <button class="filter-btn active" data-filter="all" id="filter-all">ทั้งหมด</button>
+        <button class="filter-btn" data-filter="translation" id="filter-translation">Translation</button>
+        <button class="filter-btn" data-filter="survival" id="filter-survival">Survival</button>
+      </div>
+
+      <!-- Mods Grid -->
+      <div class="mods-grid" id="mods-grid">
+
+        <!-- Mod Card 1 -->
+        <article class="mod-card" data-tags="translation survival" id="mod-small-and">
+          <div class="mc-header">
+            <div class="mc-icon" aria-hidden="true">🐜</div>
+            <div class="mc-badge">v1.0</div>
+          </div>
+          <div class="mc-body">
+            <p class="mc-game">Small And: Survive the Wilds</p>
+            <h2 class="mc-title">Thai Translation Mod</h2>
+            <p class="mc-desc">แปลเนื้อหาในเกมเป็นภาษาไทยทั้งหมด ไม่ว่าจะเป็น UI, คำอธิบายไอเทม, และ Dialogue</p>
+            <div class="mc-tags">
+              <span class="tag">Translation</span>
+              <span class="tag">Survival</span>
+            </div>
+          </div>
+          <div class="mc-footer">
+            <a href="https://www.nexusmods.com/smallandsurvivethewilds/mods/29?tab=files"
+               target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="dl-small-and">
+              ⬇ ดาวน์โหลด
+            </a>
+            <span class="mc-source">NexusMods</span>
+          </div>
+        </article>
+
+        <!-- Placeholder: more mods coming -->
+        <article class="mod-card mod-card--soon" id="mod-coming-soon" aria-label="Coming soon">
+          <div class="mc-soon-inner">
+            <div class="mc-soon-icon" aria-hidden="true">⏳</div>
+            <p class="mc-soon-text">Mod ถัดไป<br><span>กำลังทำอยู่…</span></p>
+          </div>
+        </article>
+
+      </div><!-- /mods-grid -->
+    </div>
+  </section>
+
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">[นักแปลนอนน้อย]</p>
+      <p class="footer-copy">© 2026 นักแปลนอนน้อย · ทำด้วยใจ ☕ นอนน้อยแต่แปลครบ</p>
+      <div class="footer-links">
+        <a href="https://www.nexusmods.com/users/YOUR_NEXUS_ID" target="_blank" rel="noopener">NexusMods</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
