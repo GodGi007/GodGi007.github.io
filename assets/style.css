@@ -177,6 +177,18 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 
+.btn-facebook {
+  background: #1877f2;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(24,119,242,0.4);
+}
+.btn-facebook:hover {
+  background: #166fe5;
+  box-shadow: 0 0 25px rgba(24,119,242,0.6);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 .btn-sm { padding: 0.4rem 0.9rem; font-size: 0.88rem; }
 
 /* ---------- Hero ---------- */
@@ -211,14 +223,23 @@ img { max-width: 100%; display: block; }
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.1s;
 }
-.hero-avatar .avatar-ring {
-  width: 140px;
-  height: 140px;
-  border: 3px solid var(--neon);
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(57,255,20,0.35);
-  animation: ringPulse 3s ease-in-out infinite;
+.hero-banner-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 16px;
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 30px rgba(57,255,20,0.25);
+  display: block;
+}
+.about-banner-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 14px;
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 20px rgba(57,255,20,0.2);
+  margin-bottom: 1rem;
 }
 
 .hero-tag {
