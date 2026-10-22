@@ -3,104 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>นักแปลนอนน้อย | Thai Mod Collection</title>
-  <meta name="description" content="รวม Mod ภาษาไทยโดย นักแปลนอนน้อย — แปลเกมให้คนไทยเล่นได้สบาย">
+  <title>นักแปลนอนน้อย | Thai Mod Collection & Game Translation</title>
+  <meta name="description" content="รวมม็อดภาษาไทยคุณภาพโดย นักแปลนอนน้อย — แปลเกมให้คนไทยเล่นได้สบาย แปลเมนู ซับไทย เนื้อเรื่องครบถ้วน ดาวน์โหลดฟรี">
+  
+  <!-- Open Graph -->
   <meta property="og:title" content="นักแปลนอนน้อย | Thai Mod Collection">
-  <meta property="og:description" content="รวม Mod ภาษาไทยโดย นักแปลนอนน้อย">
+  <meta property="og:description" content="รวมม็อดภาษาไทยคุณภาพโดย นักแปลนอนน้อย — แปลเกมให้คนไทยเล่นได้สบาย นอนน้อยแต่แปลครบ">
+  <meta property="og:image" content="assets/profile.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <!-- Scanline overlay -->
-  <div class="scanlines" aria-hidden="true"></div>
+  <!-- Background Cyber Mesh -->
+  <div class="bg-mesh" aria-hidden="true"></div>
 
-  <!-- Navbar -->
+  <!-- Navigation Bar -->
   <nav id="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-bracket">[</span>นักแปลนอนน้อย<span class="logo-bracket">]</span>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/profile.png" alt="นักแปลนอนน้อย" class="brand-avatar">
+        <span>นักแปลนอนน้อย</span>
+        <span class="brand-badge">THAI MODS</span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="เมนู" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <button class="hamburger-btn" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+        ☰
       </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" class="active" id="nav-home">หน้าแรก</a></li>
-        <li><a href="mods.html" id="nav-mods">Mods</a></li>
-        <li><a href="about.html" id="nav-about">เกี่ยวกับ</a></li>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link active">หน้าแรก</a></li>
+        <li><a href="mods.html" class="nav-link">Mods ทั้งหมด</a></li>
+        <li><a href="about.html" class="nav-link">เกี่ยวกับผู้แปล</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook btn-sm">
+          📘 ติดตามเพจ
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="hero-glitch-bg" aria-hidden="true"></div>
-    <div class="hero-content">
-      <div class="hero-avatar">
-        <div class="avatar-ring">
-          <img src="assets/profile.png" alt="นักแปลนอนน้อย" class="avatar-img">
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text-content">
+        <div class="hero-status-pill">
+          <span class="pulse-dot"></span>
+          <span>อัปเดตสม่ำเสมอ · ดาวน์โหลดฟรี 100%</span>
+        </div>
+        
+        <h1 class="hero-heading">
+          แปลเกมให้คนไทยเล่น<br>
+          <span class="gradient-text">นอนน้อย แต่แปลครบ</span>
+        </h1>
+        
+        <p class="hero-subheading">
+          ยินดีต้อนรับสู่คลังม็อดภาษาไทยของ <strong>นักแปลนอนน้อย</strong> ศูนย์รวมม็อดแปลไทยสำหรับเกม PC แปลเมนู ซับไตเติล และเนื้อเรื่องให้ลื่นไหลเป็นธรรมชาติ เล่นได้เต็มอรรถรส
+        </p>
+
+        <div class="hero-buttons">
+          <a href="mods.html" class="btn btn-primary">
+            🚀 ดูม็อดทั้งหมด
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook">
+            📘 เพจ Facebook
+          </a>
+          <a href="about.html" class="btn btn-secondary">
+            เกี่ยวกับผม
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-number neon-cyan">5+</span>
+            <span class="stat-label">ม็อดแปลสำเร็จ</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number neon-emerald">100%</span>
+            <span class="stat-label">โหลดฟรี ไม่มีค่าใช้จ่าย</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">☕ 1</span>
+            <span class="stat-label">คนแปล นอนน้อยทุกคืน</span>
+          </div>
         </div>
       </div>
-      <h1 class="hero-title glitch" data-text="นักแปลนอนน้อย">นักแปลนอนน้อย</h1>
-      <p class="hero-subtitle">แปลเกมให้คนไทยเล่นได้สบาย ทำคนเดียว นอนน้อย แต่ทำให้ครบ</p>
-      <div class="hero-cta">
-        <a href="mods.html" class="btn btn-primary" id="hero-mods-btn">ดู Mods ทั้งหมด</a>
-        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook" id="hero-fb-btn">
-          📘 ติดตามเพจ Facebook
-        </a>
-        <a href="about.html" class="btn btn-outline" id="hero-about-btn">เกี่ยวกับผม</a>
-      </div>
-    </div>
-    <div class="hero-stats" aria-label="สถิติ">
-      <div class="stat-box">
-        <span class="stat-num">5</span>
-        <span class="stat-label">Mods เสร็จแล้ว</span>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual">
+        <div class="avatar-card-wrapper">
+          <div class="avatar-glow-backdrop"></div>
+          <div class="avatar-glass-card">
+            <div class="avatar-image-frame">
+              <img src="assets/profile.png" alt="นักแปลนอนน้อย">
+            </div>
+            <h2 class="avatar-name">นักแปลนอนน้อย</h2>
+            <p class="avatar-role">// THAI GAME MODDER & TRANSLATOR</p>
+            <p class="avatar-bio-pill">"แปลด้วยใจ เพื่อให้คนไทยเอ็นจอยกับเกม"</p>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Featured Mod -->
-  <section class="section" id="featured">
+  <!-- Featured Spotlight Section -->
+  <section class="section" id="featured-section">
     <div class="container">
-      <h2 class="section-title"><span class="neon">//</span> Mod ล่าสุด</h2>
-      <div class="featured-card">
-        <div class="fc-badge">NEW</div>
-        <div class="fc-body">
-          <p class="fc-game">Star Wars Galactic Racer</p>
-          <h3 class="fc-title">สตาร์ วอร์ส กาแลกติก เรเซอร์ (Thai Mod)</h3>
-          <p class="fc-desc">ม็อดแปลภาษาไทยสำหรับเกม Star Wars Galactic Racer แปลเมนู ข้อความ ซับไทย และ UI ทั้งหมดในเกมเป็นภาษาไทย ให้คุณซิ่งยานแข่งในจักรวาลสตาร์ วอร์สได้อย่างเต็มอรรถรส</p>
-          <div class="fc-tags">
-            <span class="tag">Thai</span>
-            <span class="tag">Racing</span>
-            <span class="tag">Sci-Fi</span>
+      <div class="section-header">
+        <span class="section-tag">🌟 MOD SPOTLIGHT</span>
+        <h2 class="section-title">ม็อดล่าสุดที่แนะนำ</h2>
+        <p class="section-desc">ผลงานแปลไทยล่าสุดที่ปล่อยให้ดาวน์โหลด พร้อมรองรับและทดสอบแล้ว</p>
+      </div>
+
+      <div class="featured-mod-box">
+        <div class="fm-content">
+          <div class="fm-badge-row">
+            <span class="badge-featured">NEW RELEASE</span>
+            <span class="badge-version">v1.0 Ready</span>
           </div>
-          <div class="fc-actions">
-            <a href="https://www.nexusmods.com/starwarsgalacticracer/mods/38?published=1"
-               target="_blank" rel="noopener" class="btn btn-primary" id="featured-download-btn">
+          <p class="fm-game-title">STAR WARS GALACTIC RACER</p>
+          <h3 class="fm-title">สตาร์ วอร์ส กาแลกติก เรเซอร์ (Thai Mod)</h3>
+          <p class="fm-desc">
+            ม็อดแปลภาษาไทยสำหรับเกม Star Wars Galactic Racer แปลเมนู ข้อความ ซับไทย และ UI ทั้งหมดในเกม ให้คุณซิ่งยานแข่งในจักรวาลสตาร์ วอร์สได้อย่างเต็มอรรถรส
+          </p>
+
+          <ul class="fm-highlights-list">
+            <li>แปลเมนูหลักและการตั้งค่า 100%</li>
+            <li>แปลซับไตเติลและบทสนทนา</li>
+            <li>แปลสเปกยานในโรงรถ</li>
+            <li>ฟอนต์ไทยคมชัด สบายตา</li>
+          </ul>
+
+          <div class="fm-actions">
+            <a href="https://www.nexusmods.com/starwarsgalacticracer/mods/38?published=1" target="_blank" rel="noopener" class="btn btn-primary">
               ⬇ ดาวน์โหลด (NexusMods)
             </a>
-            <a href="mods.html" class="btn btn-outline" id="featured-detail-btn">ดู Mods ทั้งหมด</a>
+            <button type="button" class="btn btn-secondary open-detail-btn" data-id="star-wars-galactic-racer">
+              ℹ วิธีติดตั้ง & รายละเอียด
+            </button>
           </div>
         </div>
-        <div class="fc-img-wrap">
-          <img src="assets/star-wars-galactic-racer-cover.jpg" alt="สตาร์ วอร์ส กาแลกติก เรเซอร์" class="fc-cover-img" loading="lazy">
+
+        <div class="fm-visual">
+          <img src="assets/star-wars-galactic-racer-cover.jpg" alt="Star Wars Galactic Racer Thai Mod" loading="lazy">
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Recent Mods Showcase -->
+  <section class="section" id="recent-mods-section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="section-tag">🎮 CATALOGUE</span>
+          <h2 class="section-title">ผลงานแปลไทยอื่นๆ</h2>
+          <p class="section-desc">ม็อดคุณภาพที่ปล่อยให้ดาวน์โหลดไปแล้ว</p>
+        </div>
+        <a href="mods.html" class="btn btn-secondary btn-sm">
+          ดูคลังม็อดทั้งหมด ➜
+        </a>
+      </div>
+
+      <!-- Injected dynamically via script.js -->
+      <div class="mods-grid-layout" id="recent-mods-grid"></div>
+    </div>
+  </section>
+
+  <!-- Why Us / Features -->
+  <section class="section" id="why-us-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">✨ QUALITY FIRST</span>
+        <h2 class="section-title">ทำไมต้องม็อดของ "นักแปลนอนน้อย"?</h2>
+        <p class="section-desc">เราใส่ใจในทุกรายละเอียดเพื่อให้ผู้เล่นได้รับประสบการณ์ที่ดีที่สุด</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">📖</div>
+          <h3 class="feature-title">ภาษาลื่นไหล สละสลวย</h3>
+          <p class="feature-text">แปลและเรียบเรียงบทสนทนาให้เข้ากับบริบทของเกม มุกตลก คำศัพท์เฉพาะ และอารมณ์ของตัวละคร ไม่ใช่การแปลตรงตัวแบบบอท</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🛠</div>
+          <h3 class="feature-title">ติดตั้งง่าย มีวิธีลงละเอียด</h3>
+          <p class="feature-text">ทุกม็อดมาพร้อมกับคำแนะนำการติดตั้งแบบเข้าใจง่าย พร้อมโฟลเดอร์ระบุตำแหน่งชัดเจน ไม่ทำให้เกมพัง</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🚀</div>
+          <h3 class="feature-title">อัปเดตและรับฟังผู้เล่น</h3>
+          <p class="feature-text">หากเกมมีแพตช์ใหม่ หรือพบคำตกหล่น สามารถแจ้งเข้ามาได้ทางเพจ Facebook พร้อมตรวจสอบและแก้ไขให้อย่างต่อเนื่อง</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facebook Community Banner -->
+  <section class="section" id="community-section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="community-banner">
+        <h2 class="cb-heading">ร่วมเป็นส่วนหนึ่งของชุมชนคนนอนน้อย</h2>
+        <p class="cb-sub">
+          ติดตามข่าวสารม็อดใหม่ อัปเดตแพตช์ หรือร่วมเสนอเกมที่อยากให้แปลได้ที่เพจ Facebook ของเรา
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook">
+          📘 ไปที่ Facebook Page: นักแปลนอนน้อย
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Detail Modal -->
+  <div class="modal-overlay" id="mod-detail-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="ปิดหน้าต่าง">✕</button>
+      <div class="modal-hero-cover">
+        <img src="" id="modal-cover" alt="Mod Cover">
+      </div>
+      <div class="modal-inner-content">
+        <p class="modal-game-badge" id="modal-game"></p>
+        <h3 class="modal-title" id="modal-title"></h3>
+        
+        <div class="modal-meta-row">
+          <span>📦 เวอร์ชัน: <strong id="modal-version" class="neon-cyan"></strong></span>
+          <span>📅 วันที่อัปเดต: <strong id="modal-date"></strong></span>
+          <span>⚡ สถานะ: <strong id="modal-status" class="neon-emerald"></strong></span>
+        </div>
+
+        <p id="modal-desc" style="color: var(--text-secondary); line-height: 1.7; font-size: 1rem; margin-bottom: 1.5rem;"></p>
+
+        <h4 class="modal-section-title">✨ จุดเด่นของการแปล</h4>
+        <ul class="modal-highlights" id="modal-highlights-list"></ul>
+
+        <h4 class="modal-section-title">📥 วิธีการติดตั้ง</h4>
+        <ol class="modal-install-steps" id="modal-steps-list"></ol>
+
+        <div class="modal-download-actions" id="modal-actions"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer id="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-brand">[นักแปลนอนน้อย]</p>
-      <p class="footer-copy">© 2026 นักแปลนอนน้อย · ทำด้วยใจ ☕ นอนน้อยแต่แปลครบ</p>
-      <div class="footer-links">
-        <a href="https://www.nexusmods.com/users/YOUR_NEXUS_ID" target="_blank" rel="noopener">NexusMods</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title gradient-text">นักแปลนอนน้อย</h3>
+          <p class="footer-brand-desc">
+            แปลเกมให้คนไทยเล่นได้สบาย ทำคนเดียว นอนน้อย แต่ทำให้ครบ สนับสนุนและติดตามผลงานได้ทุกช่องทาง
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">หน้าแรก</a></li>
+            <li class="footer-link-item"><a href="mods.html">คลังม็อดทั้งหมด</a></li>
+            <li class="footer-link-item"><a href="about.html">เกี่ยวกับผู้แปล</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">ช่องทางติดตาม</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener">Facebook Fanpage</a></li>
+            <li class="footer-link-item"><a href="https://www.nexusmods.com" target="_blank" rel="noopener">NexusMods</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 นักแปลนอนน้อย · Made with ❤️ for Thai Gamers</p>
+        <p>นอนน้อย แต่แปลครบ ☕</p>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="assets/mods-data.js"></script>
   <script src="assets/script.js"></script>
 </body>
 </html>

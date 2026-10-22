@@ -3,77 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>เกี่ยวกับ — นักแปลนอนน้อย</title>
-  <meta name="description" content="เกี่ยวกับนักแปลนอนน้อย ผู้แปลเกมเป็นภาษาไทย">
+  <title>เกี่ยวกับผู้แปล | นักแปลนอนน้อย</title>
+  <meta name="description" content="ทำความรู้จักกับ นักแปลนอนน้อย — ผู้แปลม็อดภาษาไทยสำหรับเกม PC ด้วยใจ เพื่อให้คนไทยเล่นเกมได้สนุกขึ้น">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .about-profile-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 3rem;
+      align-items: flex-start;
+      margin-bottom: 3.5rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .about-avatar-col {
+      text-align: center;
+    }
+    .about-avatar-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      margin: 0 auto 1.25rem;
+      padding: 5px;
+      background: var(--accent-gradient);
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.35);
+      object-fit: cover;
+    }
+    .about-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .about-title-tag {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+      margin-bottom: 1.25rem;
+    }
+    .about-badges-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+    .about-tag-pill {
+      font-size: 0.78rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      color: var(--text-secondary);
+    }
+    .about-content-col h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      line-height: 1.3;
+    }
+    .about-content-col p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .about-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    @media (max-width: 850px) {
+      .about-profile-card {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+      }
+      .about-stats-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="scanlines" aria-hidden="true"></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
 
+  <!-- Navbar -->
   <nav id="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-bracket">[</span>นักแปลนอนน้อย<span class="logo-bracket">]</span>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/profile.png" alt="นักแปลนอนน้อย" class="brand-avatar">
+        <span>นักแปลนอนน้อย</span>
+        <span class="brand-badge">THAI MODS</span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="เมนู" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <button class="hamburger-btn" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+        ☰
       </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" id="nav-home">หน้าแรก</a></li>
-        <li><a href="mods.html" id="nav-mods">Mods</a></li>
-        <li><a href="about.html" class="active" id="nav-about">เกี่ยวกับ</a></li>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+        <li><a href="mods.html" class="nav-link">Mods ทั้งหมด</a></li>
+        <li><a href="about.html" class="nav-link active">เกี่ยวกับผู้แปล</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook btn-sm">
+          📘 ติดตามเพจ
+        </a>
+      </div>
     </div>
   </nav>
 
-  <div class="page-header">
-    <div class="container">
-      <h1 class="page-header-title"><span class="neon">//</span> เกี่ยวกับผม</h1>
+  <!-- Page Header -->
+  <header class="hero-section" style="padding-top: calc(var(--nav-height) + 3rem); padding-bottom: 2rem;">
+    <div class="container text-center">
+      <span class="section-tag">☕ ABOUT CREATOR</span>
+      <h1 class="section-title" style="font-size: 2.75rem; margin-top: 0.5rem;">
+        เกี่ยวกับ <span class="gradient-text">นักแปลนอนน้อย</span>
+      </h1>
+      <p class="section-desc" style="margin: 0.75rem auto 0;">
+        เรื่องราว เบื้องหลัง และความตั้งใจในการสร้างสรรค์ม็อดภาษาไทย
+      </p>
     </div>
-  </div>
+  </header>
 
-  <section class="section" id="about-section">
-    <div class="container about-grid">
-      <div class="about-avatar">
-        <div class="avatar-ring">
-          <img src="assets/profile.png" alt="นักแปลนอนน้อย" class="avatar-img">
+  <!-- Profile Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      
+      <div class="about-profile-card">
+        <div class="about-avatar-col">
+          <img src="assets/profile.png" alt="นักแปลนอนน้อย" class="about-avatar-img">
+          <h2 class="about-name">นักแปลนอนน้อย</h2>
+          <p class="about-title-tag">// INDIE THAI MODDER</p>
+          <div class="about-badges-group">
+            <span class="about-tag-pill">🎮 Gamer</span>
+            <span class="about-tag-pill">📖 แปลเกม</span>
+            <span class="about-tag-pill">☕ กาแฟคือชีวิต</span>
+            <span class="about-tag-pill">🇹🇭 Thai Modder</span>
+          </div>
         </div>
-        <p class="avatar-name">นักแปลนอนน้อย</p>
-        <p class="avatar-sub">Thai Game Modder</p>
+
+        <div class="about-content-col">
+          <h2>สวัสดีเพื่อนๆ เกมเมอร์ชาวไทยทุกคนครับ! 👋</h2>
+          <p>
+            ผมคือ <strong>"นักแปลนอนน้อย"</strong> คนธรรมดาที่หลงใหลในการเล่นเกม PC และมีความฝันอยากเห็นเกมดีๆ มีภาษาไทยให้ทุกคนได้เข้าถึงเรื่องราว มุกตลก และระบบของเกมได้อย่างลึกซึ้งโดยไม่มีกำแพงภาษามากั้น
+          </p>
+          <p>
+            หลายครั้งเกมสนุกๆ มักไม่มีภาษาไทยอย่างเป็นทางการ และบางเกมมีข้อความหรือเนื้อเรื่องที่น่าประทับใจมาก ผมจึงเริ่มหาวิธีแกะไฟล์เกม ดึงข้อความออกมาแปล ปรับแต่งฟอนต์ภาษาไทย และประกอบกลับเข้าไปใหม่ ทำคนเดียวเรื่อยๆ ในยามดึก จึงเป็นที่มาของฉายา <em>"นักแปลนอนน้อย"</em> นั่นเองครับ 😄
+          </p>
+          <p>
+            ทุกม็อดที่ปล่อยออกมา ผมตั้งใจแปล เรียบเรียง และตรวจทานด้วยตัวเอง เพื่อให้ภาษาออกมาลื่นไหล ไม่แข็งกระด้างเหมือนการใช้โปรแกรมแปลออโต้ และที่สำคัญคือ <strong>เปิดให้ดาวน์โหลดฟรี 100%</strong> สำหรับทุกคนครับ
+          </p>
+
+          <div class="about-stats-grid">
+            <div>
+              <h4 style="font-size: 1.8rem; font-family: var(--font-mono); color: var(--accent-cyan); font-weight: 700;">5+ เกม</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">แปลเสร็จสมบูรณ์</p>
+            </div>
+            <div>
+              <h4 style="font-size: 1.8rem; font-family: var(--font-mono); color: var(--accent-emerald); font-weight: 700;">100%</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">ทำด้วยใจ ปลอดภัย ไม่มีไวรัส</p>
+            </div>
+            <div>
+              <h4 style="font-size: 1.8rem; font-family: var(--font-mono); color: #fff; font-weight: 700;">NexusMods</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">แหล่งดาวน์โหลดมาตรฐาน</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about-text">
-        <h2 class="about-heading">สวัสดีครับ!</h2>
-        <p>ผมคือ <strong class="neon">นักแปลนอนน้อย</strong> — นักแปลเกมสมัครเล่นที่ชอบเล่นเกมและอยากให้คนไทยได้เล่นเกมที่เข้าใจง่ายขึ้น</p>
-        <p>แปล Mod คนเดียว ทำด้วยใจ บางทีนอนน้อยมากแต่ก็ยังทำต่อ 😄</p>
-        <div class="about-pills">
-          <span class="pill">🎮 Modder</span>
-          <span class="pill">📖 Translator</span>
-          <span class="pill">☕ นอนน้อย</span>
-          <span class="pill">🇹🇭 Thai</span>
+
+      <!-- Principles Section -->
+      <div class="section-header text-center">
+        <span class="section-tag">💡 PHILOSOPHY</span>
+        <h2 class="section-title">หลักการแปลม็อดของเรา</h2>
+      </div>
+
+      <div class="features-grid" style="margin-bottom: 4rem;">
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🎯</div>
+          <h3 class="feature-title">เคารพบทและบริบทดั้งเดิม</h3>
+          <p class="feature-text">ไม่แปลมั่ว ไม่เปลี่ยนความหมายเดิมของเกม แต่ขัดเกลาสำนวนให้เข้าปากคนไทย เล่นแล้วอินไปกับตัวละคร</p>
         </div>
-        <div class="about-links">
-          <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook" id="about-fb-btn">
-            📘 ติดตามเพจ Facebook
-          </a>
-          <a href="mods.html" class="btn btn-primary" id="about-mods-btn">ดู Mods ของผม</a>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🎨</div>
+          <h3 class="feature-title">ฟอนต์สวย ไม่ลอย ไม่เพี้ยน</h3>
+          <p class="feature-text">ใส่ใจเรื่องฟอนต์ภาษาไทย การจัดวางสระ วรรณยุกต์ และขนาดตัวอักษร เพื่อไม่ให้ข้อความล้นกรอบ UI ของเกม</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🤝</div>
+          <h3 class="feature-title">ชุมชนคือหัวใจสำคัญ</h3>
+          <p class="feature-text">ยินดีรับฟังข้อเสนอแนะ แจ้งคำผิด หรือบั๊กเสมอ เพื่อนำไปอัปเดตแพตช์ให้ตัวม็อดสมบูรณ์ที่สุด</p>
         </div>
       </div>
+
+      <!-- Contact Banner -->
+      <div class="community-banner">
+        <h2 class="cb-heading">อยากพูดคุยหรือส่งกำลังใจ?</h2>
+        <p class="cb-sub">
+          สามารถเข้าไปกดไลก์เพจ คอมเมนต์พูดคุย หรือทักมาสอบถามวิธีลงม็อดได้ตลอดเวลาครับ
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook">
+          📘 ติดตามเพจ Facebook: นักแปลนอนน้อย
+        </a>
+      </div>
+
     </div>
   </section>
 
+  <!-- Footer -->
   <footer id="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-brand">[นักแปลนอนน้อย]</p>
-      <p class="footer-copy">© 2026 นักแปลนอนน้อย · ทำด้วยใจ ☕ นอนน้อยแต่แปลครบ</p>
-      <div class="footer-links">
-        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener">Facebook Page</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title gradient-text">นักแปลนอนน้อย</h3>
+          <p class="footer-brand-desc">
+            แปลเกมให้คนไทยเล่นได้สบาย ทำคนเดียว นอนน้อย แต่ทำให้ครบ สนับสนุนและติดตามผลงานได้ทุกช่องทาง
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">หน้าแรก</a></li>
+            <li class="footer-link-item"><a href="mods.html">คลังม็อดทั้งหมด</a></li>
+            <li class="footer-link-item"><a href="about.html">เกี่ยวกับผู้แปล</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">ช่องทางติดตาม</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener">Facebook Fanpage</a></li>
+            <li class="footer-link-item"><a href="https://www.nexusmods.com" target="_blank" rel="noopener">NexusMods</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 นักแปลนอนน้อย · Made with ❤️ for Thai Gamers</p>
+        <p>นอนน้อย แต่แปลครบ ☕</p>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="assets/mods-data.js"></script>
   <script src="assets/script.js"></script>
 </body>
 </html>

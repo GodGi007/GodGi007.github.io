@@ -3,196 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mods — นักแปลนอนน้อย</title>
-  <meta name="description" content="รายการ Mod ภาษาไทยทั้งหมดโดย นักแปลนอนน้อย">
+  <title>คลังม็อดภาษาไทยทั้งหมด | นักแปลนอนน้อย</title>
+  <meta name="description" content="รวมม็อดภาษาไทยสำหรับเกม PC ทั้งหมดโดย นักแปลนอนน้อย ค้นหาง่าย ดาวน์โหลดฟรี พร้อมวิธีติดตั้ง">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <div class="scanlines" aria-hidden="true"></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
 
+  <!-- Navbar -->
   <nav id="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-bracket">[</span>นักแปลนอนน้อย<span class="logo-bracket">]</span>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/profile.png" alt="นักแปลนอนน้อย" class="brand-avatar">
+        <span>นักแปลนอนน้อย</span>
+        <span class="brand-badge">THAI MODS</span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="เมนู" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <button class="hamburger-btn" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+        ☰
       </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" id="nav-home">หน้าแรก</a></li>
-        <li><a href="mods.html" class="active" id="nav-mods">Mods</a></li>
-        <li><a href="about.html" id="nav-about">เกี่ยวกับ</a></li>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+        <li><a href="mods.html" class="nav-link active">Mods ทั้งหมด</a></li>
+        <li><a href="about.html" class="nav-link">เกี่ยวกับผู้แปล</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener" class="btn btn-facebook btn-sm">
+          📘 ติดตามเพจ
+        </a>
+      </div>
     </div>
   </nav>
 
-  <div class="page-header">
-    <div class="container">
-      <h1 class="page-header-title"><span class="neon">//</span> Mods ทั้งหมด</h1>
-      <p class="page-header-sub">รวม Mod ภาษาไทยทั้งหมดที่ทำไว้ อัปเดตเรื่อยๆ</p>
+  <!-- Page Header -->
+  <header class="hero-section" style="padding-top: calc(var(--nav-height) + 3rem); padding-bottom: 2.5rem;">
+    <div class="container text-center">
+      <span class="section-tag">📦 MOD REPOSITORY</span>
+      <h1 class="section-title" style="font-size: 2.75rem; margin-top: 0.5rem;">
+        คลังม็อดภาษาไทย <span class="gradient-text">ทั้งหมด</span>
+      </h1>
+      <p class="section-desc" style="margin: 0.75rem auto 0;">
+        ดาวน์โหลดม็อดแปลไทยฟรี ปลอดภัย พร้อมคู่มือวิธีติดตั้งทีละขั้นตอน
+      </p>
     </div>
-  </div>
+  </header>
 
-  <!-- Filter bar -->
-  <section class="section" id="mods-section">
+  <!-- Search & Filter Section -->
+  <section class="section" style="padding-top: 0;">
     <div class="container">
-      <div class="filter-bar" role="group" aria-label="กรองประเภท Mod">
-        <button class="filter-btn active" data-filter="all" id="filter-all">ทั้งหมด</button>
-        <button class="filter-btn" data-filter="translation" id="filter-translation">Translation</button>
-        <button class="filter-btn" data-filter="survival" id="filter-survival">Survival</button>
+      
+      <div class="filter-search-container">
+        <!-- Live Search -->
+        <div class="search-input-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="mod-search-input" class="search-input" placeholder="ค้นหาชื่อเกม เช่น Star Wars, Breathedge หรือคำค้นหา..." aria-label="ค้นหาม็อด">
+        </div>
+
+        <!-- Category Pills -->
+        <div class="filter-pills" role="tablist">
+          <button class="filter-pill active" data-category="all">ทั้งหมด</button>
+          <button class="filter-pill" data-category="racing">แข่งรถ / ยานยนต์</button>
+          <button class="filter-pill" data-category="survival">เอาชีวิตรอด (Survival)</button>
+          <button class="filter-pill" data-category="simulation">จำลองสถานการณ์</button>
+          <button class="filter-pill" data-category="adventure">ผจญภัย & เนื้อเรื่อง</button>
+        </div>
       </div>
 
-      <!-- Mods Grid -->
-      <div class="mods-grid" id="mods-grid">
+      <!-- Mods Grid Layout (Populated via assets/script.js) -->
+      <div class="mods-grid-layout" id="mods-grid">
+        <!-- Cards will be rendered dynamically -->
+      </div>
 
-        <!-- Mod Card 1: Never Alone -->
-        <article class="mod-card" id="mod-never-alone">
-          <div class="mc-header">
-            <img src="assets/never-alone-cover.png" alt="Never Alone ฉันไม่ได้อยู่ตัวคนเดียว" class="mc-cover-img" loading="lazy">
-            <div class="mc-badge">v1.0</div>
-          </div>
-          <div class="mc-body">
-            <p class="mc-game">Never Alone (Kisima Ingitchuna)</p>
-            <h2 class="mc-title">ฉันไม่ได้อยู่ตัวคนเดียว (Thai Mod)</h2>
-            <p class="mc-desc">แปลเนื้อหาและซับไทยในเกมทั้งหมด ให้คนไทยได้สัมผัสเรื่องราวสุดซาบซึ้งและสนุกกับเกมได้เต็มอิ่ม</p>
-            <div class="mc-tags">
-              <span class="tag">Thai</span>
-            </div>
-          </div>
-          <div class="mc-footer">
-            <a href="https://www.nexusmods.com/neveralonekisimaingitchuna/mods/2?published=1"
-               target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="dl-never-alone">
-              ⬇ ดาวน์โหลด
-            </a>
-            <span class="mc-source">NexusMods</span>
-          </div>
-        </article>
-
-        <!-- Mod Card 2: Small And -->
-        <article class="mod-card" id="mod-small-and">
-          <div class="mc-header">
-            <img src="assets/small-and-cover.png" alt="แดนคนจิ๋ว" class="mc-cover-img" loading="lazy">
-            <div class="mc-badge">v1.0</div>
-          </div>
-          <div class="mc-body">
-            <p class="mc-game">Small And: Survive the Wilds</p>
-            <h2 class="mc-title">Thai Translation Mod</h2>
-            <p class="mc-desc">แปลเนื้อหาในเกมเป็นภาษาไทยทั้งหมด ไม่ว่าจะเป็น UI, คำอธิบายไอเทม, และ Dialogue</p>
-            <div class="mc-tags">
-              <span class="tag">Thai</span>
-            </div>
-          </div>
-          <div class="mc-footer">
-            <a href="https://www.nexusmods.com/smallandsurvivethewilds/mods/29?tab=files"
-               target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="dl-small-and">
-              ⬇ ดาวน์โหลด
-            </a>
-            <span class="mc-source">NexusMods</span>
-          </div>
-        </article>
-
-        <!-- Mod Card 3: Breathedge -->
-        <article class="mod-card" id="mod-breathedge">
-          <div class="mc-header">
-            <img src="assets/breathedge-cover.png" alt="เบรสเฮดจ์ เอาชีวิตรอดในห้วงอวกาศ" class="mc-cover-img" loading="lazy">
-            <div class="mc-badge">v1.0</div>
-          </div>
-          <div class="mc-body">
-            <p class="mc-game">Breathedge</p>
-            <h2 class="mc-title">เบรสเฮดจ์ — เอาชีวิตรอดในห้วงอวกาศ (Thai Mod)</h2>
-            <p class="mc-desc">แปลเนื้อหา ข้อความ และ UI ทั้งหมดในเกมเป็นภาษาไทย ให้คนไทยได้สัมผัสเรื่องราวสุดกวนในอวกาศได้อย่างเต็มอิ่ม</p>
-            <div class="mc-tags">
-              <span class="tag">Thai</span>
-              <span class="tag">Survival</span>
-            </div>
-          </div>
-          <div class="mc-footer">
-            <a href="https://www.nexusmods.com/breathedge/mods/36"
-               target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="dl-breathedge">
-              ⬇ ดาวน์โหลด
-            </a>
-            <span class="mc-source">NexusMods</span>
-          </div>
-        </article>
-
-        <!-- Mod Card 4: Rival Stars Horse Racing Desktop Edition -->
-        <article class="mod-card" id="mod-rival-stars">
-          <div class="mc-header">
-            <img src="assets/rival-stars-cover.jpg" alt="ไรวัลสตาร์ส ฮอร์สเรซซิ่ง เดสก์ท็อป เอดิชัน" class="mc-cover-img" loading="lazy">
-            <div class="mc-badge">v1.0</div>
-          </div>
-          <div class="mc-body">
-            <p class="mc-game">Rival Stars Horse Racing Desktop Edition</p>
-            <h2 class="mc-title">ไรวัลสตาร์ส ฮอร์สเรซซิ่ง เดสก์ท็อป เอดิชัน (Thai Mod)</h2>
-            <p class="mc-desc">แปลเมนู ข้อความ รายละเอียดม้า และระบบจัดการฟาร์มเป็นภาษาไทยทั้งหมด ให้คนไทยขี่ม้าแข่งได้อย่างเต็มอรรถรส</p>
-            <div class="mc-tags">
-              <span class="tag">Thai</span>
-              <span class="tag">Simulation</span>
-              <span class="tag">Racing</span>
-            </div>
-          </div>
-          <div class="mc-footer">
-            <a href="https://www.nexusmods.com/mods/1?game_id=10056&published=1"
-               target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="dl-rival-stars-nexus">
-              ⬇ NexusMods
-            </a>
-            <a href="https://www.mediafire.com/file/6haj1irddgx75v2/RivalStars_ThaiMod_v1.0_Full.zip/file"
-               target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="dl-rival-stars-mf">
-              📦 MediaFire
-            </a>
-          </div>
-        </article>
-
-        <!-- Mod Card 5: Star Wars Galactic Racer -->
-        <article class="mod-card" id="mod-star-wars-galactic-racer">
-          <div class="mc-header">
-            <img src="assets/star-wars-galactic-racer-cover.jpg" alt="สตาร์ วอร์ส กาแลกติก เรเซอร์" class="mc-cover-img" loading="lazy">
-            <div class="mc-badge">v1.0</div>
-          </div>
-          <div class="mc-body">
-            <p class="mc-game">Star Wars Galactic Racer</p>
-            <h2 class="mc-title">สตาร์ วอร์ส กาแลกติก เรเซอร์ (Thai Mod)</h2>
-            <p class="mc-desc">แปลเมนู ข้อความ ซับไทย และ UI ทั้งหมดในเกมเป็นภาษาไทย ให้คุณซิ่งยานแข่งในจักรวาลสตาร์ วอร์สได้อย่างเต็มอรรถรส</p>
-            <div class="mc-tags">
-              <span class="tag">Thai</span>
-              <span class="tag">Racing</span>
-              <span class="tag">Sci-Fi</span>
-            </div>
-          </div>
-          <div class="mc-footer">
-            <a href="https://www.nexusmods.com/starwarsgalacticracer/mods/38?published=1"
-               target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="dl-star-wars-galactic-racer">
-              ⬇ ดาวน์โหลด
-            </a>
-            <span class="mc-source">NexusMods</span>
-          </div>
-        </article>
-
-        <!-- Placeholder: more mods coming -->
-        <article class="mod-card mod-card--soon" id="mod-coming-soon" aria-label="Coming soon">
-          <div class="mc-soon-inner">
-            <div class="mc-soon-icon" aria-hidden="true">⏳</div>
-            <p class="mc-soon-text">Mod ถัดไป<br><span>กำลังทำอยู่…</span></p>
-          </div>
-        </article>
-
-      </div><!-- /mods-grid -->
     </div>
   </section>
 
+  <!-- Interactive Detail Modal -->
+  <div class="modal-overlay" id="mod-detail-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="ปิดหน้าต่าง">✕</button>
+      <div class="modal-hero-cover">
+        <img src="" id="modal-cover" alt="Mod Cover">
+      </div>
+      <div class="modal-inner-content">
+        <p class="modal-game-badge" id="modal-game"></p>
+        <h3 class="modal-title" id="modal-title"></h3>
+        
+        <div class="modal-meta-row">
+          <span>📦 เวอร์ชัน: <strong id="modal-version" class="neon-cyan"></strong></span>
+          <span>📅 วันที่อัปเดต: <strong id="modal-date"></strong></span>
+          <span>⚡ สถานะ: <strong id="modal-status" class="neon-emerald"></strong></span>
+        </div>
+
+        <p id="modal-desc" style="color: var(--text-secondary); line-height: 1.7; font-size: 1rem; margin-bottom: 1.5rem;"></p>
+
+        <h4 class="modal-section-title">✨ จุดเด่นของการแปล</h4>
+        <ul class="modal-highlights" id="modal-highlights-list"></ul>
+
+        <h4 class="modal-section-title">📥 วิธีการติดตั้ง</h4>
+        <ol class="modal-install-steps" id="modal-steps-list"></ol>
+
+        <div class="modal-download-actions" id="modal-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer id="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-brand">[นักแปลนอนน้อย]</p>
-      <p class="footer-copy">© 2026 นักแปลนอนน้อย · ทำด้วยใจ ☕ นอนน้อยแต่แปลครบ</p>
-      <div class="footer-links">
-        <a href="https://www.nexusmods.com/users/YOUR_NEXUS_ID" target="_blank" rel="noopener">NexusMods</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title gradient-text">นักแปลนอนน้อย</h3>
+          <p class="footer-brand-desc">
+            แปลเกมให้คนไทยเล่นได้สบาย ทำคนเดียว นอนน้อย แต่ทำให้ครบ สนับสนุนและติดตามผลงานได้ทุกช่องทาง
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">ลิงก์ด่วน</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">หน้าแรก</a></li>
+            <li class="footer-link-item"><a href="mods.html">คลังม็อดทั้งหมด</a></li>
+            <li class="footer-link-item"><a href="about.html">เกี่ยวกับผู้แปล</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">ช่องทางติดตาม</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://www.facebook.com/profile.php?id=61592087018204&locale=th_TH" target="_blank" rel="noopener">Facebook Fanpage</a></li>
+            <li class="footer-link-item"><a href="https://www.nexusmods.com" target="_blank" rel="noopener">NexusMods</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 นักแปลนอนน้อย · Made with ❤️ for Thai Gamers</p>
+        <p>นอนน้อย แต่แปลครบ ☕</p>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="assets/mods-data.js"></script>
   <script src="assets/script.js"></script>
 </body>
 </html>
