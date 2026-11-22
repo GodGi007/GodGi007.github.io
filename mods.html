@@ -14,7 +14,7 @@
     img { max-width: 100%; height: auto; }
     .brand-avatar { width: 38px !important; height: 38px !important; border-radius: 50% !important; object-fit: cover !important; }
   </style>
-  <link rel="stylesheet" href="assets/style.css?v=2.0">
+  <link rel="stylesheet" href="assets/style.css?v=3.0">
 </head>
 <body>
 
@@ -71,12 +71,15 @@
           <input type="text" id="mod-search-input" class="search-input" placeholder="ค้นหาชื่อเกม เช่น Star Wars, Breathedge หรือคำค้นหา..." aria-label="ค้นหาม็อด">
         </div>
 
-        <!-- Category Pills -->
+        <!-- Category & Status Pills -->
         <div class="filter-pills" role="tablist">
           <button class="filter-pill active" data-category="all">ทั้งหมด</button>
+          <button class="filter-pill" data-category="completed">✓ เสร็จสมบูรณ์ (100%)</button>
+          <button class="filter-pill" data-category="in_progress">🔥 กำลังแปล (WIP)</button>
+          <button class="filter-pill" data-category="upcoming">⏳ รอตัวเกม</button>
+          <button class="filter-pill" data-category="action">แอ็กชัน / คาวบอย</button>
+          <button class="filter-pill" data-category="survival">เอาชีวิตรอด</button>
           <button class="filter-pill" data-category="racing">แข่งรถ / ยานยนต์</button>
-          <button class="filter-pill" data-category="survival">เอาชีวิตรอด (Survival)</button>
-          <button class="filter-pill" data-category="simulation">จำลองสถานการณ์</button>
           <button class="filter-pill" data-category="adventure">ผจญภัย & เนื้อเรื่อง</button>
         </div>
       </div>
@@ -106,12 +109,14 @@
           <span>⚡ สถานะ: <strong id="modal-status" class="neon-emerald"></strong></span>
         </div>
 
+        <div id="modal-progress-container"></div>
+
         <p id="modal-desc" style="color: var(--text-secondary); line-height: 1.7; font-size: 1rem; margin-bottom: 1.5rem;"></p>
 
         <h4 class="modal-section-title">✨ จุดเด่นของการแปล</h4>
         <ul class="modal-highlights" id="modal-highlights-list"></ul>
 
-        <h4 class="modal-section-title">📥 วิธีการติดตั้ง</h4>
+        <h4 class="modal-section-title" id="modal-steps-title">📥 วิธีการติดตั้ง</h4>
         <ol class="modal-install-steps" id="modal-steps-list"></ol>
 
         <div class="modal-download-actions" id="modal-actions"></div>
@@ -154,7 +159,7 @@
   </footer>
 
   <!-- Scripts with Cache-Busting -->
-  <script src="assets/mods-data.js?v=2.0"></script>
-  <script src="assets/script.js?v=2.0"></script>
+  <script src="assets/mods-data.js?v=3.0"></script>
+  <script src="assets/script.js?v=3.0"></script>
 </body>
 </html>
