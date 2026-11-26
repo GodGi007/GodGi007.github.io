@@ -6,6 +6,38 @@
 const MODS_DATA = [
   // --- 1. ม็อดที่เสร็จสมบูรณ์แล้ว (100%) ---
   {
+    id: "redfall",
+    game: "Redfall",
+    title: "เรดฟอลล์ (Redfall Thai Mod)",
+    shortDesc: "ม็อดแปลภาษาไทยสำหรับเกม Redfall ร่วมมือกับเพื่อนล่าฝูงแวมไพร์ที่ยึดเกาะ แปลเนื้อเรื่อง ภารกิจ คำอธิบายอาวุธ และระบบการเล่นเป็นภาษาไทยครบวงจร แปลเสร็จสมบูรณ์โดยรวมเรียบร้อย",
+    category: "action",
+    tags: ["Thai", "Action", "FPS", "Co-op", "เสร็จแล้ว"],
+    version: "v1.0",
+    date: "พฤศจิกายน 2026",
+    status: "เสร็จสมบูรณ์ 100%",
+    statusCode: "completed",
+    progress: 100,
+    statusNote: "แปลเสร็จครบถ้วน โดยรวมเล่นได้ลื่นไหล (หากพบคำเพี้ยน/คำตกหล่น สามารถแจ้งเข้ามาได้ทางเพจ Facebook)",
+    cover: "assets/redfall-cover.jpg",
+    isFeatured: true,
+    downloads: {
+      nexus: "https://www.nexusmods.com/redfall/mods/12?tab=description",
+      mediafire: ""
+    },
+    highlights: [
+      "แปลเนื้อเรื่องหลักและคัตซีนบทสนทนาทั้งหมด 100%",
+      "แปลรายละเอียดอาวุธ อุปกรณ์เสริม และสกิลเฉพาะตัวของฮีโร่",
+      "แปลคำบรรยายสิ่งแวดล้อมและบันทึกลึกลับรอบเมือง Redfall",
+      "รองรับการเล่นทั้งแบบผู้เล่นเดี่ยว (Solo) และ Co-op กับเพื่อน"
+    ],
+    installGuide: [
+      "ดาวน์โหลดไฟล์ม็อดจากลิงก์ NexusMods",
+      "นำไฟล์ม็อดไปวางในโฟลเดอร์ตัวเกมตามคำแนะนำ",
+      "เปิดเข้าเกมเพื่อเล่นภาษาไทยได้ทันที",
+      "หากพบคำแปลเพี้ยนหรือข้อผิดพลาด สามารถทักแจ้งที่เพจ Facebook นักแปลนอนน้อย ได้ตลอดเวลาครับ"
+    ]
+  },
+  {
     id: "star-wars-galactic-racer",
     game: "Star Wars Galactic Racer",
     title: "สตาร์ วอร์ส กาแลกติก เรเซอร์ (Thai Mod)",
@@ -19,7 +51,7 @@ const MODS_DATA = [
     progress: 100,
     statusNote: "แปลสมบูรณ์และทดสอบเรียบร้อย ใช้งานได้ทันที",
     cover: "assets/star-wars-galactic-racer-cover.jpg",
-    isFeatured: true,
+    isFeatured: false,
     downloads: {
       nexus: "https://www.nexusmods.com/starwarsgalacticracer/mods/38?published=1",
       mediafire: ""
@@ -160,37 +192,6 @@ const MODS_DATA = [
       "ดาวน์โหลดไฟล์จาก NexusMods",
       "แตกไฟล์แล้วคัดลอกไปทับในไดเรกทอรีเกม Never Alone",
       "เข้าเล่นเกม แล้วเปิดการแสดงผลซับไตเติลในเมนูการตั้งค่า"
-    ]
-  },
-  {
-    id: "redfall",
-    game: "Redfall",
-    title: "เรดฟอลล์ (Redfall Thai Mod)",
-    shortDesc: "ม็อดแปลภาษาไทยสำหรับเกม Redfall ร่วมมือกับเพื่อนล่าฝูงแวมไพร์ที่ยึดเกาะ แปลเนื้อเรื่อง ภารกิจ คำอธิบายอาวุธ และระบบการเล่นเป็นภาษาไทยครบวงจร แปลเสร็จสมบูรณ์โดยรวมเรียบร้อย",
-    category: "action",
-    tags: ["Thai", "Action", "FPS", "Co-op", "เสร็จแล้ว"],
-    version: "v1.0",
-    date: "พฤศจิกายน 2026",
-    status: "เสร็จสมบูรณ์ 100%",
-    statusCode: "completed",
-    progress: 100,
-    statusNote: "แปลเสร็จครบถ้วน โดยรวมเล่นได้ลื่นไหล (หากพบคำเพี้ยน/คำตกหล่น สามารถแจ้งเข้ามาได้ทางเพจ Facebook)",
-    cover: "assets/redfall-cover.jpg",
-    isFeatured: false,
-    downloads: {
-      nexus: "",
-      mediafire: ""
-    },
-    highlights: [
-      "แปลเนื้อเรื่องหลักและคัตซีนบทสนทนาทั้งหมด 100%",
-      "แปลรายละเอียดอาวุธ อุปกรณ์เสริม และสกิลเฉพาะตัวของฮีโร่",
-      "แปลคำบรรยายสิ่งแวดล้อมและบันทึกลึกลับรอบเมือง Redfall",
-      "รองรับการเล่นทั้งแบบผู้เล่นเดี่ยว (Solo) และ Co-op กับเพื่อน"
-    ],
-    installGuide: [
-      "นำไฟล์ม็อดไปวางในโฟลเดอร์ตัวเกมตามคำแนะนำ",
-      "เปิดเข้าเกมเพื่อเล่นภาษาไทยได้ทันที",
-      "หากพบคำแปลเพี้ยนหรือข้อผิดพลาด สามารถทักแจ้งที่เพจ Facebook นักแปลนอนน้อย ได้ตลอดเวลาครับ"
     ]
   },
 
